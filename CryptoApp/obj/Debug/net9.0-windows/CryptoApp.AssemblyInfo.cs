@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CryptoApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95df488ae8de239a3cf4153b4801485ba0e21fb7")]
 [assembly: System.Reflection.AssemblyProductAttribute("CryptoApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CryptoApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
