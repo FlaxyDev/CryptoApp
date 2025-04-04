@@ -8,6 +8,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CryptoApp.Models;
+using CryptoApp.ViewModels;
+using CryptoApp.Views;
 
 namespace CryptoApp
 {
@@ -19,6 +22,22 @@ namespace CryptoApp
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+      
+        private void SearchTextBox_KeyDown(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            if (e.Key == System.Windows.Input.Key.Enter)
+            {
+                var viewModel = (CoinViewModel)DataContext;
+                viewModel.PerformSearch();
+            }
+        }
+
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+            var viewModel = (CoinViewModel)DataContext;
+            viewModel.PerformSearch();
         }
     }
 }
